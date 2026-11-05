@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoVision - Portal de Sustentabilidade & Ciência</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navegação Principal -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Eco<span>Vision</span> 🌱</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#temas">Temas</a></li>
+          <li><a href="#artigos">Artigos Científicos</a></li>
+          <li><a href="#calculadora">Calculadora</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Banner Principal -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <h1>Transformando o Futuro com Ciência e Sustentabilidade</h1>
+      <p>Explore pesquisas acadêmicas, práticas sustentáveis e soluções inovadoras para preservar o nosso planeta.</p>
+      <a href="#temas" class="btn-primary">Explorar Tópicos</a>
+    </div>
+  </section>
+
+  <!-- Seção de Temas -->
+  <section id="temas" class="section">
+    <div class="container">
+      <h2 class="section-title">Pilares do Desenvolvimento Sustentável</h2>
+      <div class="cards-grid">
+        
+        <!-- Tema 1 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Pegada de Carbono">
+          <div class="card-body">
+            <span class="tag">Impacto Ambiental</span>
+            <h3>Pegada de Carbono</h3>
+            <p>Mede a quantidade total de gases de efeito estufa (GEE) emitidos diretamente ou indiretamente por atividades humanas, produtos e organizações.</p>
+          </div>
+        </article>
+
+        <!-- Tema 2 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80" alt="Plástico Verde">
+          <div class="card-body">
+            <span class="tag">Inovação Matéria-Prima</span>
+            <h3>Plástico Verde (Bioplásticos)</h3>
+            <p>Produzido a partir de fontes renováveis como a cana-de-açúcar. Ajuda a capturar CO₂ da atmosfera durante o seu ciclo de produção vegetal.</p>
+          </div>
+        </article>
+
+        <!-- Tema 3 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=600&q=80" alt="Logística Reversa">
+          <div class="card-body">
+            <span class="tag">Gestão de Resíduos</span>
+            <h3>Logística Reversa</h3>
+            <p>Instrumento de desenvolvimento econômico e social caracterizado pelo conjunto de ações para viabilizar a coleta e restituição de resíduos aos setores empresariais.</p>
+          </div>
+        </article>
+
+        <!-- Tema 4 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=600&q=80" alt="Economia Circular">
+          <div class="card-body">
+            <span class="tag">Novo Modelo Econômico</span>
+            <h3>Economia Circular</h3>
+            <p>Modelo de produção e consumo que envolve a partilha, reutilização, reparação, renovação e reciclagem de materiais e produtos existentes.</p>
+          </div>
+        </article>
+
+        <!-- Tema 5 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80" alt="Descarte de Pilhas e Baterias">
+          <div class="card-body">
+            <span class="tag">Resíduos Perigosos</span>
+            <h3>Descarte de Pilhas e Baterias</h3>
+            <p>Componentes contêm metais pesados (chumbo, mercúrio, cádmio). Seu descarte incorreto contamina o solo e os lençóis freáticos.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Artigos Científicos -->
+  <section id="artigos" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Artigos Científicos & Publicações</h2>
+      
+      <!-- Filtros -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="carbono">Carbono</button>
+        <button class="filter-btn" data-filter="bioplasticos">Plástico Verde</button>
+        <button class="filter-btn" data-filter="logistica">Logística Reversa</button>
+        <button class="filter-btn" data-filter="circular">Economia Circular</button>
+        <button class="filter-btn" data-filter="baterias">Pilhas & Baterias</button>
+      </div>
+
+      <!-- Lista de Artigos -->
+      <div class="articles-grid">
+        
+        <div class="article-card" data-category="carbono">
+          <h4>Avaliação do Ciclo de Vida da Pegada de Carbono Industrial</h4>
+          <p class="author">Por: Silva, A. & Oliveira, R. (2023)</p>
+          <p class="summary">Estudo comparativo sobre metodologias ISO 14064 para mitigação de emissões industriais.</p>
+          <a href="#" class="read-more">Ler Artigo Completo (PDF) →</a>
+        </div>
+
+        <div class="article-card" data-category="bioplasticos">
+          <h4>Bioplásticos à Base de Cana-de-Açúcar: Desafios e Oportunidades</h4>
+          <p class="author">Por: Santos, M. et al. (2022)</p>
+          <p class="summary">Análise das propriedades mecânicas e impacto na redução de emissões comparado ao PE tradicional.</p>
+          <a href="#" class="read-more">Ler Artigo Completo (PDF) →</a>
+        </div>
+
+        <div class="article-card" data-category="logistica">
+          <h4>Desafios da Logística Reversa de Eletroeletrônicos no Brasil</h4>
+          <p class="author">Por: Ferreira, L. (2024)</p>
+          <p class="summary">Implementação da Política Nacional de Resíduos Sólidos (PNRS) e redes de coleta urbana.</p>
+          <a href="#" class="read-more">Ler Artigo Completo (PDF) →</a>
+        </div>
+
+        <div class="article-card" data-category="circular">
+          <h4>Transição para a Economia Circular na Indústria de Manufatura</h4>
+          <p class="author">Por: Costa, K. & Almeida, P. (2023)</p>
+          <p class="summary">Framework prático para substituição do modelo linear 'extrair-fabricar-descartar'.</p>
+          <a href="#" class="read-more">Ler Artigo Completo (PDF) →</a>
+        </div>
+
+        <div class="article-card" data-category="baterias">
+          <h4>Impacto Ambiental do Descarte Inadequado de Baterias de Lítio</h4>
+          <p class="author">Por: Rocha, T. (2023)</p>
+          <p class="summary">Contaminação por metais pesados em áreas urbanas e metodologias de reciclagem hidrometalúrgica.</p>
+          <a href="#" class="read-more">Ler Artigo Completo (PDF) →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculadora Interativa -->
+  <section id="calculadora" class="section">
+    <div class="container">
+      <h2 class="section-title">Calculadora Rápida de Pegada de Carbono</h2>
+      <div class="calc-box">
+        <form id="calcForm">
+          <div class="form-group">
+            <label for="km">Quantos km você percorre de carro por semana?</label>
+            <input type="number" id="km" placeholder="Ex: 50" required>
+          </div>
+          <div class="form-group">
+            <label for="energia">Qual a sua
